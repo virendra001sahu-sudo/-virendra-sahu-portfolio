@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virendra Sahu - Nursing Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
+        
+        .experience-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .experience-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background-color: #e5e7eb;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-bold text-blue-600">VS</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="px-3 py-2 text-sm font-medium hover:text-blue-600">About</a>
+                        <a href="#education" class="px-3 py-2 text-sm font-medium hover:text-blue-600">Education</a>
+                        <a href="#experience" class="px-3 py-2 text-sm font-medium hover:text-blue-600">Experience</a>
+                        <a href="#contact" class="px-3 py-2 text-sm font-medium hover:text-blue-600">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Virendra Sahu</h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">Healthcare Professional</h2>
+                    <p class="text-lg mb-8">Dedicated nursing professional with extensive clinical experience across multiple healthcare institutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100">Contact Me</a>
+                        <a href="#experience" class="border border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600">View Experience</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="w-64 h-64 rounded-full bg-white overflow-hidden shadow-xl">
+                        <img src="vvs.jpg" alt="Portrait of Virendra Sahu, a professional nursing practitioner in formal attire" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-2/3 pr-0 md:pr-10">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Professional Summary</h3>
+                    <p class="text-gray-600 mb-6">
+                        I am a dedicated healthcare professional with diverse clinical experience across multiple healthcare settings. 
+                        My journey in the medical field has equipped me with hands-on skills in patient care, medical procedures, 
+                        and healthcare management.
+                    </p>
+                    
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Career Objective</h3>
+                    <p class="text-gray-600 mb-6">
+                        To work in a professional environment to utilize and apply knowledge and skills, enabling growth as a fresh graduate.
+                    </p>
+                    
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Personal Information</h3>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
+                        <li><span class="font-medium">Full Name:</span> Virendra Sahu</li>
+                        <li><span class="font-medium">Date of Birth:</span> 28/08/1999</li>
+                        <li><span class="font-medium">Gender:</span> Male</li>
+                        <li><span class="font-medium">Father's Name:</span> Mr. Rampal Sahu</li>
+                        <li><span class="font-medium">Languages:</span> English, Hindi</li>
+                        <li><span class="font-medium">Marital Status:</span> Unmarried</li>
+                        <li><span class="font-medium">Nationality:</span> Indian</li>
+                        <li><span class="font-medium">Religion:</span> Hindu</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/3 mt-10 md:mt-0">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Key Skills</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Patient Care</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Medical Procedures</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Emergency Response</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Team Collaboration</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Education</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Qualification</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Board/University</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Year</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">10th</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">MP Board</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2016</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Pass</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">12th</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">MP Board</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2018</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Pass</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">B.Sc Nursing</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">MPMSU Jabalpur</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Complete</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Work Experience</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="experience-card bg-white rounded-lg shadow-md p-6 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-full bg-blue-100 text-blue-600">
+                            <i class="fas fa-hospital text-xl"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold">NSCB Medical College</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Jabalpur, Madhya Pradesh</p>
+                    <p class="text-gray-500">6 months of clinical experience in a premier medical college, handling diverse patient cases.</p>
+                    <div class="mt-4 text-sm text-blue-600">2019</div>
+                </div>
+                
+                <div class="experience-card bg-white rounded-lg shadow-md p-6 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-full bg-blue-100 text-blue-600">
+                            <i class="fas fa-clinic-medical text-xl"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold">ON Hospital</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Gwalior, Madhya Pradesh</p>
+                    <p class="text-gray-500">6 months of hands-on experience in a multi-specialty hospital, assisting in various medical procedures.</p>
+                    <div class="mt-4 text-sm text-blue-600">2020</div>
+                </div>
+                
+                <div class="experience-card bg-white rounded-lg shadow-md p-6 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-full bg-blue-100 text-blue-600">
+                            <i class="fas fa-procedures text-xl"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold">Link Hospital</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Gwalior, Madhya Pradesh</p>
+                    <p class="text-gray-500">8 months experience in patient care, emergency response, and post-operative care.</p>
+                    <div class="mt-4 text-sm text-blue-600">2020-2021</div>
+                </div>
+                
+                <div class="experience-card bg-white rounded-lg shadow-md p-6 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-full bg-blue-100 text-blue-600">
+                            <i class="fas fa-hospital-alt text-xl"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold">Sunflower Hospital</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Nagpur, Maharashtra</p>
+                    <p class="text-gray-500">1 year of extensive experience in a high-volume hospital, working across multiple departments.</p>
+                    <div class="mt-4 text-sm text-blue-600">2021-2022</div>
+                </div>
+                
+                <div class="experience-card bg-white rounded-lg shadow-md p-6 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-full bg-blue-100 text-blue-600">
+                            <i class="fas fa-heartbeat text-xl"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold">Maxx Hospital</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Jabalpur, Madhya Pradesh</p>
+                    <p class="text-gray-500">8 months in a specialty hospital, focusing on intensive care and specialized patient management.</p>
+                    <div class="mt-4 text-sm text-blue-600">2023</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="bg-white p-8 rounded-lg shadow-sm h-full">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Contact Information</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="p-2 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">Phone</h4>
+                                    <p class="text-gray-600">7566905844</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="p-2 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">Email</h4>
+                                    <p class="text-gray-600">virendra001sahu@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="p-2 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">Address</h4>
+                                    <p class="text-gray-600">Village Post Dulehra, Dist Anuppur, M.P. 484224, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-lg font-medium text-gray-800 mb-4">Connect with me</h4>
+                            <div class="flex space-x-4">
+                               
+                               
+                                <a href="https://www.facebook.com/share/19Qj3hzgd7/" class="p-3 rounded-full bg-gray-100 text-blue-600 hover:bg-blue-600 hover:text-white transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/virendra_sahu123456?igsh=eTB2czl0aXJiZ2Fy" class="p-3 rounded-full bg-gray-100 text-blue-600 hover:bg-blue-600 hover:text-white transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-10">
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Send a Message</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Declaration Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-blue-50 p-8 rounded-lg">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Declaration</h3>
+                <p class="text-gray-600 mb-6">I do hereby declare that the above information is true to the best of my knowledge.</p>
+                <div class="flex justify-end">
+                    <div>
+                        <p class="text-gray-800 font-medium">Virendra Sahu</p>
+                        <p class="text-sm text-gray-500">Healthcare Professional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-xl font-bold">Virendra Sahu</span>
+                    <p class="mt-2 text-gray-400">Healthcare Professional Portfolio</p>
+                </div>
+                <div>
+                    <p class="text-gray-400">&copy; 2023 Virendra Sahu. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
